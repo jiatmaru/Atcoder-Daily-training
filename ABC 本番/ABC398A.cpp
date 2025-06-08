@@ -1,0 +1,24 @@
+#include<bits/stdc++.h>
+#define rep(i,a,b) for(int i=a;i<b;i++)
+#define rrep(i,a,b) for(int i=a;i>=b;i--)
+#define fore(i,a) for(auto &i:a)
+#define all(x) (x).begin(),(x).end()
+using namespace std;
+const long long INF = 1LL << 60;
+using Graph=vector<vector<int>>;
+typedef long long ll;
+
+ll f(ll n) {return n*(n+1)/2;}
+int main(){
+    int N;cin>>N;
+    if (N%2==0) {
+    rep(i,0,N/2-1){cout<<"-";}
+    {cout<<"==";}
+    rep(i,0,N/2-1){cout<<"-";}
+    }
+    else if (N%2==1) {
+        rep(i,0,N/2){cout<<"-";}
+        {cout<<"=";}
+        rep(i,0,N/2){cout<<"-";}
+    }
+}

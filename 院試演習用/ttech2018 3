@@ -1,0 +1,14 @@
+
+typedef struct CELL{
+    int data; struct CELL *next;
+
+} CELL;
+
+CELL * CELL_alloc(int data){
+CELL *p =malloc (sizeof (CELL));
+p-> data = data; p->next =NULL; return p;
+} 
+CELL *insert1 (CELL *head,int data){
+    CELL *new =CELL_alloc (data);
+    CELL *p =head;
+}
